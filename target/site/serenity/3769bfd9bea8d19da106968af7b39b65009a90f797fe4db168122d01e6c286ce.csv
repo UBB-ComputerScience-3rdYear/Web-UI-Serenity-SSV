@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search by keyword story","Searching by keyword banana should display the corresponding article","SUCCESS","2022-04-19T19:33:43.6241132+03:00[Europe/Bucharest]","0.0","4.75"
+"Search by keyword story","Searching by keyword upswing should display the corresponding article","SUCCESS","2022-04-19T19:33:48.9293441+03:00[Europe/Bucharest]","0.0","2.06"
+"Search by keyword story","Searching by keyword equity should display the corresponding article","SUCCESS","2022-04-19T19:33:51.0287521+03:00[Europe/Bucharest]","0.0","2.24"
+"Search by keyword story","Searching by keyword apple should display the corresponding article","SUCCESS","2022-04-19T19:33:53.3120953+03:00[Europe/Bucharest]","0.0","2.7"

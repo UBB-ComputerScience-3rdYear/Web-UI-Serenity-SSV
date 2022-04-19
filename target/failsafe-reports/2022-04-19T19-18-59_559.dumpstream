@@ -1,0 +1,4 @@
+# Created at 2022-04-19T19:18:59.859
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Facultate\Anul III\Sem II\Software Systems Verification and Validation\GitHub\Web-UI-Serenity-SSV\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
