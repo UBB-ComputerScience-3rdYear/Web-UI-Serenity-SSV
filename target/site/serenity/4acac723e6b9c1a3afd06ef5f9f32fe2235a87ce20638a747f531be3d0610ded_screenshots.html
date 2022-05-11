@@ -23,31 +23,19 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<!--[if IE 7]>
-<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
-
-<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
-
-<!-- JQuery -->
-<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
-<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
-<script src="chartist/dist/chartist.min.js"></script>
-<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
-<!-- Required Stylesheets -->
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
 <link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
 
 <!-- Required Javascript -->
 <script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
-<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
 
 <script>
     jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
@@ -71,7 +59,16 @@
 </script>
 <link rel="stylesheet" href="css/core.css"/>
 <link rel="stylesheet" href="css/link.css"/>
-<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
 <link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
 <script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
@@ -145,22 +142,22 @@
 <div>
     <ul class="nav nav-tabs" role="tablist">
         <li class="active">
-            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
         </li>
         <li >
-            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
         <li >
-            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
         </li>
         <li >
-            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
         <li >
-            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="bi bi-chat-text"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-04-2022 19:33</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 10-05-2022 19:22</span>
     <br style="clear:left"/>
 </div>
 
@@ -175,7 +172,7 @@
                         <td>
                             <div>
                                 <h3 class="discreet-story-header">
-                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
                                     <span class="story-header-title">Search By Keyword Story </span>
                                     <span class="badge tag-badge" style="">Story</span>
                                 </h3>
@@ -195,7 +192,7 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">Searching by keyword banana should display the corresponding article
                                     <span class="related-issue-title"></span>
@@ -216,13 +213,13 @@
     <div id="contenttilttle">
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="464368a537507086ee1f32d00b51d48631ce9226b1e660aa1f610d158e757f28.png" title=" Is the home page" width="1295"/>
-                <img src="9560adcdf5f4147b15b906afc2f605ffbde4aa459251ababc93fe3716cb9eaeb.png" title=" Looks for: pear" width="1295"/>
-                <img src="9560adcdf5f4147b15b906afc2f605ffbde4aa459251ababc93fe3716cb9eaeb.png" title=" Enters: pear" width="1295"/>
-                <img src="9560adcdf5f4147b15b906afc2f605ffbde4aa459251ababc93fe3716cb9eaeb.png" title=" Starts search" width="1295"/>
-                <img src="a4e9a6242e850589e7e67520fd17117498ecc2e6451697977824b8258dfe4070.png" title=" Starts search (completed)" width="1295"/>
-                <img src="a4e9a6242e850589e7e67520fd17117498ecc2e6451697977824b8258dfe4070.png" title=" Looks for: pear (completed)" width="1295"/>
-                <img src="5ef74bcf3e9a52bc65da7848721e62c0dfc588be47ba69a3e0b2de611c155bdc.png" title=" Should see definition: An edible fruit produced by the pear tree, similar to an apple but typically elongated towards the stem: <span class='success-color'>SUCCESS</span>" width="1295"/>
+                <img src="a18bd35bbd79e78bba23449387d0e3d69cf211080fd30cacba373943f7f92ae9.png" title=" Is the home page" width="2400"/>
+                <img src="e91d7df720443446d23c9292468530c06290a918ee7253ed7acec2a13446fa56.png" title=" Looks for: pear" width="2400"/>
+                <img src="e91d7df720443446d23c9292468530c06290a918ee7253ed7acec2a13446fa56.png" title=" Enters: pear" width="2400"/>
+                <img src="e91d7df720443446d23c9292468530c06290a918ee7253ed7acec2a13446fa56.png" title=" Starts search" width="2400"/>
+                <img src="bf41a9ad156c7298dc7af71c4be53d414de76da367e00a6401cefdc5de5c02c3.png" title=" Starts search (completed)" width="2400"/>
+                <img src="bf41a9ad156c7298dc7af71c4be53d414de76da367e00a6401cefdc5de5c02c3.png" title=" Looks for: pear (completed)" width="2400"/>
+                <img src="5b8d8b35ed613daf48b5d36711bad13f4fbce3a4d3ce9779d82e61cb231fe960.png" title=" Should see definition: An edible fruit produced by the pear tree, similar to an apple but typically elongated towards the stem: <span class='success-color'>SUCCESS</span>" width="2400"/>
             </div>
         </div>
 
@@ -231,7 +228,7 @@
 </div>
 <div id="beforefooter"></div>
 <div id="bottomfooter">
-    <span class="version">Serenity BDD version 2.3.2</span>
+    <span class="version">Serenity BDD version 3.2.5</span>
 </div>
 </body>
 </html>

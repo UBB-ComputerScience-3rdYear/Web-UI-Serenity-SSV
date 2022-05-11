@@ -19,32 +19,19 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<!--[if IE 7]>
-<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
-
-<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
-
-<!-- JQuery -->
-<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
-<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
-<script src="chartist/dist/chartist.min.js"></script>
-<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
-<!-- Required Stylesheets -->
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
 <link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
 
 <!-- Required Javascript -->
 <script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
-<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
 
 <script>
     jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
@@ -68,18 +55,25 @@
 </script>
 <link rel="stylesheet" href="css/core.css"/>
 <link rel="stylesheet" href="css/link.css"/>
-<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- JQuery-UI -->
 <link type="text/css" href="jqueryui/1.11.2-start/jquery-ui.min.css" rel="Stylesheet" />
 <script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
-<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
 
 <script>
     jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
@@ -126,8 +120,10 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
+ <!-- inflection.of(breadcrumb.displayName).asATitle()-->
             > <a href="b73ab2df35cd94b5317e6d6bfdb3d2310ff26862ef2f19989342051d05f64b83.html">Search</a>
-            > <a href="7b98ab63a1f66587e18b1d9e9de56423ebc1935e2b0df5669f2965b1b61d2c47.html">Search By Keyword Story</a>
+ <!-- inflection.of(breadcrumb.displayName).asATitle()-->
+            > <a href="7b98ab63a1f66587e18b1d9e9de56423ebc1935e2b0df5669f2965b1b61d2c47.html">Search by keyword story</a>
         > Searching by keyword equity should display the corresponding article
         </span>
         </div>
@@ -140,22 +136,22 @@
 <div>
     <ul class="nav nav-tabs" role="tablist">
         <li class="active">
-            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
         </li>
         <li >
-            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
         <li >
-            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="bi bi-chat-text"></i> Capabilities</a>
         </li>
         <li >
-            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
         <li >
-            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="bi bi-chat-text"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-04-2022 19:33</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 10-05-2022 19:22</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -169,7 +165,7 @@
                         <td>
                                 <div>
                                     <h3 class="discreet-story-header">
-                                        <i class="fa fa-2x fa-comments-o"></i>
+                                        <i class="fs-2 bi bi-chat-left-quote title-icon"></i>
                                         <span class="story-header-title">Search By Keyword Story </span>
                                     </h3>
 
@@ -177,6 +173,8 @@
 
                         </td>
                         <td valign="top">
+                            <p class="tag">
+                            </p>
                         </td>
                     </tr>
                 </table>
@@ -185,7 +183,7 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
                                     Searching by keyword equity should display the corresponding article
@@ -200,283 +198,282 @@
 
 
 
-        </div>
-    </div>
+</div>
+</div>
 
-    <div class="clr"></div>
-
-
-    <div id="beforetable"></div>
+<div class="clr"></div>
 
 
-    <div id="tablecontents">
-        <div>
-            <table class="step-table">
-                <tr class="step-titles">
-                    <th width="65">
-                    </th>
-                    <th class="step-description-column greentext">
-                        Steps
-                    </th>
+<div id="beforetable"></div>
 
-                        <th width="150" class="greentext">Screenshots</th>
-                    <th width="130" class="greentext">Outcome</th>
-                    <th width="100" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
-                </tr>
-                <tr class="step-table-separator">
-                    <td colspan="5"></td>
-                </tr>
 
-                    <tr class="test-SUCCESS">
+<div id="tablecontents">
+    <div>
+        <table class="step-table">
+            <tr class="step-titles">
+                <th width="65">
+                </th>
+                <th class="step-description-column greentext">
+                    Steps
+                </th>
 
-                        <td width="50" class="step-icon">
-                            <a name="0"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                    <th width="150" class="greentext">Screenshots</th>
+                <th width="130" class="greentext">Outcome</th>
+                <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
+            </tr>
+            <tr class="step-table-separator">
+                <td colspan="5"></td>
+            </tr>
+
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="0"></a>
+                            <span style="margin-left: 20px;"
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
-                        </td>
+                    </td>
 
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="top-level-step">
                                                 Is the home page
                                         </span>
-                                <span class="evidence">
+                            <span class="evidence">
                                 </span>
-                            </div>
-                        </td>
+                        </div>
+                    </td>
 
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=0">
-                                        <img src="9f55e313f79a0b6c22de8de15681bd5af8f9d429bf5a626360945a0fa4bcad1b.png"
-                                             href="9f55e313f79a0b6c22de8de15681bd5af8f9d429bf5a626360945a0fa4bcad1b.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=0">
+                                    <img src="4dd533101b020dbd5805e8185ab3ef2c1e753bc1cc01771c94e8e1f08752dbe1.png"
+                                         href="4dd533101b020dbd5805e8185ab3ef2c1e753bc1cc01771c94e8e1f08752dbe1.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="bi bi-arrow-right"></i>
 
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=1">
-                                        <img src="adfd8973fad119ceaf4d4dc7d946e6c3b54b0f9a83c61f4b73e56110138012bc.png"
-                                             href="adfd8973fad119ceaf4d4dc7d946e6c3b54b0f9a83c61f4b73e56110138012bc.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.53s</span></td>
-                    </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="50" class="step-icon">
-                            <a name="1"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=1">
+                                    <img src="ee51fceba3e7d387be5a7921d5991c4eaf52539b76f6237ef9ca3af75a0175c8.png"
+                                         href="ee51fceba3e7d387be5a7921d5991c4eaf52539b76f6237ef9ca3af75a0175c8.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
                                 </a>
                         </td>
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">396ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
 
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
-                                   style="display:block;">
-                                    <span class="top-level-step">
+                    <td width="50" class="step-icon">
+                        <a name="1"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="bi bi-plus-square imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                                <span class="top-level-step">
                                                 Looks for: equity
                                         </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=2">
+                                    <img src="ce07d89e70de2d7ce690a2ce13035c66878f5ec6bf11d9a41584890abec75b69.png"
+                                         href="ce07d89e70de2d7ce690a2ce13035c66878f5ec6bf11d9a41584890abec75b69.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
                                 </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
+                                <i class="bi bi-arrow-right"></i>
+
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=6">
+                                    <img src="d2663193a06b87650f74261487042f6ec22d4721bd5c175ea9600b26ccc09f89.png"
+                                         href="d2663193a06b87650f74261487042f6ec22d4721bd5c175ea9600b26ccc09f89.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">1s 244ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection1" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
 
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=2">
-                                        <img src="37e2e1551e94626832d43cf325f394e177f9972d4acd5db26b34a04bfd20681d.png"
-                                             href="37e2e1551e94626832d43cf325f394e177f9972d4acd5db26b34a04bfd20681d.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
-
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=6">
-                                        <img src="53bb37743849fd71043951dfe9f7f99b4e6c4ac6ae55f6171b9df98c5f778e87.png"
-                                             href="53bb37743849fd71043951dfe9f7f99b4e6c4ac6ae55f6171b9df98c5f778e87.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">1.16s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection1" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="70" class="step-icon">
-                            <a name="1-0"></a>
-                                <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                    <td width="70" class="step-icon">
+                        <a name="1-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
-                        </td>
+                    </td>
 
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
                                                 Enters: equity
                                         </span>
-                                <span class="evidence">
+                            <span class="evidence">
                                 </span>
-                            </div>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=3">
+                                    <img src="ce07d89e70de2d7ce690a2ce13035c66878f5ec6bf11d9a41584890abec75b69.png"
+                                         href="ce07d89e70de2d7ce690a2ce13035c66878f5ec6bf11d9a41584890abec75b69.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">175ms</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
 
-                            <td width="160" class="SUCCESS-text">
-
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=3">
-                                        <img src="37e2e1551e94626832d43cf325f394e177f9972d4acd5db26b34a04bfd20681d.png"
-                                             href="37e2e1551e94626832d43cf325f394e177f9972d4acd5db26b34a04bfd20681d.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.36s</span></td>
-                    </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="70" class="step-icon">
-                            <a name="1-1"></a>
-                                <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                    <td width="70" class="step-icon">
+                        <a name="1-1"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                 </span>
-                        </td>
+                    </td>
 
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
                                                 Starts search
                                         </span>
-                                <span class="evidence">
+                            <span class="evidence">
                                 </span>
-                            </div>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=4">
+                                    <img src="ce07d89e70de2d7ce690a2ce13035c66878f5ec6bf11d9a41584890abec75b69.png"
+                                         href="ce07d89e70de2d7ce690a2ce13035c66878f5ec6bf11d9a41584890abec75b69.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="bi bi-arrow-right"></i>
+
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=5">
+                                    <img src="d2663193a06b87650f74261487042f6ec22d4721bd5c175ea9600b26ccc09f89.png"
+                                         href="d2663193a06b87650f74261487042f6ec22d4721bd5c175ea9600b26ccc09f89.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=4">
-                                        <img src="37e2e1551e94626832d43cf325f394e177f9972d4acd5db26b34a04bfd20681d.png"
-                                             href="37e2e1551e94626832d43cf325f394e177f9972d4acd5db26b34a04bfd20681d.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
-
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=5">
-                                        <img src="53bb37743849fd71043951dfe9f7f99b4e6c4ac6ae55f6171b9df98c5f778e87.png"
-                                             href="53bb37743849fd71043951dfe9f7f99b4e6c4ac6ae55f6171b9df98c5f778e87.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0.8s</span></td>
-                    </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="50" class="step-icon">
-                            <a name="2"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                Should see definition: Fairness, impartiality, or justice as determined in light of "natural law" or "natural right".
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                            <td width="160" class="SUCCESS-text">
-
-                                    <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=7">
-                                        <img src="e463f58bcec164696cb3d2ff4408c043393e5c0eb350805338a8815c3c86f99b.png"
-                                             href="e463f58bcec164696cb3d2ff4408c043393e5c0eb350805338a8815c3c86f99b.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.4s</span></td>
-                    </tr>
-                <tr class="test-SUCCESS">
-                        <td colspan="3"></td>
-                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>2.24s</em></span></td>
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1s 067ms</span></td>
                 </tr>
 
-            </table>
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="2"></a>
+                            <span style="margin-left: 20px;"
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="top-level-step">
+                                                Should see definition: Fairness, impartiality, or justice as determined in light of "natural law" or "natural right".
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                        <td width="160" class="SUCCESS-text">
+
+                                <a href="6a0a0045da42f2b35a31ed507cb0f9ecf57def4ce8c9647d22a51a676a046e02_screenshots.html#screenshots?screenshot=7">
+                                    <img src="d1799e5e7967236b2e2d95331da811ab21a593c7452b4a27e3d9e1b7190ac828.png"
+                                         href="d1799e5e7967236b2e2d95331da811ab21a593c7452b4a27e3d9e1b7190ac828.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">267ms</span></td>
+                </tr>
+            <tr class="test-SUCCESS">
+                    <td colspan="3"></td>
+                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                <td width="100"><span class="top-level-step"><em>1.91s</em></span></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div id="beforefooter"></div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <span class="version">Serenity BDD version 3.2.5</span>
         </div>
     </div>
+</div>
 
-    <div id="beforefooter"></div>
-
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <span class="version">Serenity BDD version 2.3.2</span>
-            </div>
-        </div>
-    </div>
-
-    <script type="text/javascript">
-        function toggleDiv(divId) {
-            $("#" + divId).toggle();
-            var imgsrc = $(".img" + divId).attr('src');
-            if (imgsrc == 'images/plus.png') {
-                $(".img" + divId).attr("src", function () {
-                    return "images/minus.png";
-                });
-
-            } else {
-                $(".img" + divId).attr("src", function () {
-                    return "images/plus.png";
-                });
-            }
-        }
-    </script>
-
-
-    <script type="text/javascript">
-        //<![CDATA[
-
-        $(document).ready(function () {
-            $('img.screenshot').imgPreview({
-                imgCSS: {
-                    width: '500px'
-                },
-                distanceFromCursor: {top: 10, left: -200}
+<script type="text/javascript">
+    function toggleDiv(divId) {
+        $("#" + divId).toggle();
+        var imgsrc = $(".img" + divId).attr('src');
+        if (imgsrc == 'images/plus.png') {
+            $(".img" + divId).attr("src", function () {
+                return "images/minus.png";
             });
-        });
 
-        //]]>
-    </script>
-    <div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
-                src="" style="display: none; "></div>
-    <div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
-        <img style="width: 200px; display: none; " src=""></div>
-    <div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
-        <img style="height: 200px; opacity: 1; display: none; " src=""></div>
-    <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
-    <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+        } else {
+            $(".img" + divId).attr("src", function () {
+                return "images/plus.png";
+            });
+        }
+    }
+</script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    $(document).ready(function () {
+        $('img.screenshot').imgPreview({
+            imgCSS: {
+                width: '500px'
+            },
+            distanceFromCursor: {top: 10, left: -200}
+        });
+    });
+
+    //]]>
+</script>
+<div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+            src="" style="display: none; "></div>
+<div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+    <img style="width: 200px; display: none; " src=""></div>
+<div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+    <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+<div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+<div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
 
 </div>
 </body>

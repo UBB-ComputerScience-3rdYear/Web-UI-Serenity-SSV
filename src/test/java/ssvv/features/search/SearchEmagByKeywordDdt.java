@@ -39,7 +39,7 @@ public class SearchEmagByKeywordDdt {
 
     @Issue("#EMAG-1")
     @Test
-    public void searchWikiByKeywordTestDDT() {
+    public void searchEmagByKeywordTestDDT() {
         endUser.is_the_home_page();
         endUser.looks_for(getName());
         endUser.should_see_result(getResultText());
